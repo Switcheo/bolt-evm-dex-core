@@ -1,4 +1,4 @@
-# Uniswap V2 contracts, for Boltchain
+# Uniswap V2 contracts for Boltchain
 
 ## Usage
 
@@ -8,11 +8,23 @@
 cp .env.example .env
 ```
 
+2. `yarn`
+
+```bash
+yarn
+```
+
+### Deploy & Test
+
+```bash
+yarn deploy:boltchain
+```
+
 ## 🚨 ATTENTION 🚨
 Each time you update `UniswapV2Pair.sol` contract, you need to update the hex
 value in this line:
 
-https://github.com/Switcheo/bolt-evm-dex-core/blob/dfe393ca55241544f54a780c4cd05b1824a2ed1a/contracts/libraries/UniswapV2Library.sol#L25
+https://github.com/Switcheo/bolt-evm-dex-core/blob/master/contracts/libraries/UniswapV2Library.sol#L37
 
 Use this command to get a new value:
 ```
@@ -26,7 +38,7 @@ installed)
 allows to generate contract addresses deterministically without depending on external state (deployer's
 nonce). Instead, it uses the hash of the deployed contract code and salt:
 
-https://github.com/Jeiwan/uniswapv2-contracts/blob/dfe393ca55241544f54a780c4cd05b1824a2ed1a/contracts/UniswapV2Factory.sol#L32
+https://github.com/Switcheo/bolt-evm-dex-core/blob/master/contracts/UniswapV2Factory.sol#L42
 
 Each time you update the Pair contract (even when you change compiler version), its bytecode changes, which
 means the hash of the bytecode also changes.

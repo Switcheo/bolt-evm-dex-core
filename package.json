@@ -56,7 +56,8 @@
     "test": "hardhat test",
     "prepublishOnly": "yarn test",
     "run-node": "hardhat node",
-    "deploy": "hardhat run src/scripts/deploy.ts --network localhost"
+    "deploy": "hardhat run src/scripts/deploy.ts --network localhost",
+    "deploy:boltchain": "hardhat run src/scripts/deploy.ts --network boltchain"
   },
   "license": "GPL-3.0-or-later",
   "packageManager": "yarn@3.2.4",
