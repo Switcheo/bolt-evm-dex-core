@@ -10,7 +10,7 @@ import "./src/tasks/accounts";
 
 const config: HardhatUserConfig = {
   etherscan: {
-    apiKey: process.env.API_KEY,
+    apiKey: process.env.API_KEY ?? "",
     customChains: [
       {
         network: 'boltchain',
@@ -29,7 +29,7 @@ const config: HardhatUserConfig = {
     boltchain: {
       url: "https://rpc.bolt.switcheo.network",
       accounts: {
-        mnemonic: process.env.MNEMONIC,
+        mnemonic: process.env.MNEMONIC ?? "test test test test test test test test test test test test"
       }
     }
   },

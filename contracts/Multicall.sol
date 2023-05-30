@@ -12,7 +12,7 @@ contract Multicall {
         address target;
         bytes callData;
     }
-
+    
     function aggregate(
         Call[] memory calls
     ) public returns (uint256 blockNumber, bytes[] memory returnData) {
