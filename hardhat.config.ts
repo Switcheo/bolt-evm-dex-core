@@ -14,10 +14,10 @@ const config: HardhatUserConfig = {
     customChains: [
       {
         network: 'boltchain',
-        chainId: 42069,
+        chainId: 16481,
         urls: {
-          apiURL: "https://blockscout.bolt.switcheo.network/api",
-          browserURL: "https://blockscout.bolt.switcheo.network"
+          apiURL: "https://sepolia.pivotalscan.xyz/api",
+          browserURL: "https://sepolia.pivotalscan.xyz"
         }
       }
     ]
@@ -27,7 +27,7 @@ const config: HardhatUserConfig = {
       blockGasLimit: 30000000,
     },
     boltchain: {
-      url: "https://rpc.bolt.switcheo.network",
+      url: "https://sepolia.pivotalprotocol.com",
       accounts: {
         mnemonic: process.env.MNEMONIC ?? "test test test test test test test test test test test test"
       }
