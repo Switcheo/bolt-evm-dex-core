@@ -62,6 +62,6 @@
   "license": "GPL-3.0-or-later",
   "packageManager": "yarn@3.2.4",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.9.0"
+    "@openzeppelin/contracts": "^4.9.3"
   }
 }
